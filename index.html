@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Flip Calendar - Current</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+
+<body>
+  <div class="flip-calendar">
+    <div class="flip-calendar-wrapper">
+      <div class="flip-calendar-row1">
+        <div class="flip-calendar-cardday">
+          <div class="flip-calendar-detailwrapper">
+            <div class="flip-calendar-detaildiv">
+              <div class="flip-calendar-topelement"></div>
+              <div class="flip-calendar-bottomelement"></div>
+            </div>
+          </div>
+          <div class="flip-calendar-text" id="first-digit">1</div>
+        </div>
+        <div class="flip-calendar-cardday">
+          <div class="flip-calendar-detailwrapper">
+            <div class="flip-calendar-detaildiv">
+              <div class="flip-calendar-topelement"></div>
+              <div class="flip-calendar-bottomelement"></div>
+            </div>
+          </div>
+          <div class="flip-calendar-text" id="second-digit">5</div>
+        </div>
+
+      </div>
+      <div class="flip-calendar-row2">
+        <div class="flip-calendar-card2">
+          <div class="flip-calendar-wrapperdetail">
+            <div class="flip-calendar-detaildiv">
+              <div class="flip-calendar-topelement"></div>
+              <div class="flip-calendar-bottomelement"></div>
+            </div>
+          </div>
+
+          <div class="flip-calendar-text-month">
+            MON
+          </div>
+        </div>
+        <div class="flip-calendar-card2">
+          <div class="flip-calendar-wrapperdetail">
+            <div class="flip-calendar-detaildiv">
+              <div class="flip-calendar-topelement"></div>
+              <div class="flip-calendar-bottomelement"></div>
+            </div>
+          </div>
+
+          <div class="flip-calendar-text-month">
+            APR
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<!--
+
+/* Media query for desktops */
+@media (min-width: 1200px) {
+  .flip-calendar {
+    padding: 50px;
+    gap: 30px;
+  }
+
+  .flip-calendar-wrapper,
+  .flip-calendar-cardday,
+  .flip-calendar-card2 {
+    border-radius: 55px;
+  }
+
+  /* Responsive text adjustments */
+  .flip-calendar-text {
+    font-size: 15vw;
+  }
+
+  .flip-calendar-text-month {
+    font-size: 5vw;
+  }
+}
+/* Media query for laptops */
+@media (min-width: 992px) and (max-width: 1396px) {
+  .flip-calendar-wrapper,
+  .flip-calendar-cardday,
+  .flip-calendar-card2 {
+    border-radius: 35px;
+  }
+
+  /* Responsive text adjustments */
+  .flip-calendar-text {
+    font-size: 30vw;
+  }
+
+  .flip-calendar-text-month {
+    font-size: 8vw;
+  }
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .flip-calendar {
+    padding: 15px;
+    gap: 15px;
+    max-width: 500px;
+    border-radius: 55px;
+  }
+
+  .flip-calendar-wrapper {
+    padding: 20px;
+    gap: 15px;
+    border-radius: 55px;
+  }
+
+  /* Responsive text adjustments */
+  .flip-calendar-text {
+    font-size: 30vw;
+  }
+
+  .flip-calendar-text-month {
+    font-size: 8vw;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 390px) {
+  .flip-calendar {
+    max-width: 250px;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .flip-calendar-cardday{
+flex: 1; /* Take up all available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  }
+
+  .flip-calendar-wrapper,
+  .flip-calendar-cardday,
+  .flip-calendar-card2 {
+    border-radius: 35px;
+  }
+
+  /* Responsive text adjustments */
+  .flip-calendar-text {
+    font-size: 30vw;
+  }
+
+  .flip-calendar-text-month {
+    font-size: 8vw;
+  }
+
+  .flip-calendar-row1,
+  .flip-calendar-row2 {
+    padding: 0px;
+    gap: 10px;
+  }
+}
+<!-- partial -->
+  
+</body>
+</html>
